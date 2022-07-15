@@ -1,7 +1,12 @@
-👉[테스터기로 생성한 인자($ARG)](https://github.com/minckim42/push_swap_tester)로 프로그램 실행시키기
+👉 [테스터 실행](https://github.com/minckim42/push_swap_tester)
+- ./push_swap_tester/push_swap_tester.bash 실행
+- ./push_swap/checker_Mac 파일이 존재해야 한다.
 
-👉visualize 사용법
-```python
-python3 python_visualizer.py `ruby -e "puts (-50..50).to_a.shuffle.join(' ')"`
+👉환경 변수 $ARG에 테스트 할 숫자 담기
 ```
-숫자 100개(-50~50), 순서는 랜덤으로 사용한다
+export ARG="5 4 3 2 1"
+한 뒤
+./push_swap $ARG
+또는
+./push_swap $ARG | ./checker_Mac $ARG
+```
